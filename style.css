@@ -14,9 +14,24 @@
   color: rgb(0, 255, 0);
   box-shadow: 0 0 15px rgb(0, 0, 0);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
-  text-shadow: 0 0 10px rgb(0, 255, 0);
+  text-shadow: 0 0 10px rgb(0, 255, 0),
+              0 0 20px rgb(0, 255, 0),
+              0 0 30px rgb(0, 255, 0);
+}
+
+.calc-screen {
+  height: 125px;
+  border: 5px solid green;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 4rem;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 10px;
+  user-select: none;
 }
 
 .calc-buttons {
@@ -29,7 +44,6 @@
     "zero zero dot equal";
   grid-gap: 7px;
   justify-items: center;
-  /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .btn {
